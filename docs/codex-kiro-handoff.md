@@ -110,4 +110,6 @@ Chỉ ghi việc thực sự đã làm. Khi bên kia đang sửa một file, ch�
 - Đã xác minh GitHub CLI đăng nhập tuanpham2005; repo tuanpham2005/sales-data-pipeline tồn tại, đang public và chưa có commit.
 - Bổ sung ignore cho credential/caches và ZIP build/backup có thể tạo lại; các file này vẫn giữ trên máy. Không thay đổi visibility của repo.
 - Đã kiểm tra 94 staged files bằng pattern scan: không phát hiện access-key IDs, GitHub tokens, private keys, literal AWS secrets hoặc URL presigned. Đây không phải security audit đầy đủ.
-- Chuẩn bị commit đầu tiên và push main; trạng thái thực tế sau push phải kiểm tra bằng git status và SHA origin/main. Không thay đổi tài nguyên AWS trong lượt này.
+- Đã push commit mã nguồn đầu tiên 35d3b045b859a5d7281413a138bec694be670264 lên main; git ls-remote xác nhận đúng SHA và working tree sạch tại thời điểm kiểm tra. Main đã track origin/main.
+- Repo: https://github.com/tuanpham2005/sales-data-pipeline (public). Cập nhật AGENTS.md để các lượt sau biết workspace hiện có Git; không thay đổi tài nguyên AWS trong lượt này.
+- Tài liệu bàn giao này được lưu bằng commit riêng sau commit mã nguồn; kiểm tra git log/status để lấy HEAD mới nhất. Không ghi secret hoặc credential vào Git.

@@ -14,7 +14,7 @@
 
 - Read `docs/codex-kiro-handoff.md` before starting work, and re-read files another agent has changed before editing them.
 - Record the current task, responsible agent, and exact files being edited in the handoff before changing application files. Work sequentially when the same file is involved.
-- Preserve the user's edits and the other agent's work. This workspace currently has no Git repository; do not assume reset, restore, or clean operations are available or appropriate.
+- Preserve the user's edits and the other agent's work. Git was initialized on 2026-10-22; main tracks https://github.com/tuanpham2005/sales-data-pipeline.git (public). Inspect status/diff before editing; do not reset, restore, or clean other people's changes.
 - At handoff, record changed files, commands actually run, actual results, unresolved issues, and the next action. Distinguish local evidence from AWS evidence.
 - Codex can open the workspace/files using the installed Kiro launcher. This installed Kiro 1.2.4 advertises `kiro chat`, but an actual attempt failed with `workbench.action.chat.newChat` not found. Do not use a zero exit status to claim a prompt was delivered. The user must submit the initial handoff request in Kiro's chat until a supported direct channel is verified.
 - Use saved files for the return channel. Do not claim a live, automatic chat bridge or completion by the other agent without evidence.
