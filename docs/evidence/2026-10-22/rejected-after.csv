@@ -1,0 +1,5 @@
+source_row,raw_record,error
+8,"[""ORD006"", ""1"", ""2026-09-03"", ""Eraser"", ""Stationery"", ""-2"", ""5000"", ""Da Nang"", ""VND""]",quantity_must_be_positive_integer
+9,"[""ORD007"", ""1"", ""2026-09-03"", ""Ruler"", ""Stationery"", ""1"", ""abc"", ""Ha Noi"", ""VND""]",invalid_unit_price
+10,"[""ORD008"", ""1"", ""2026-02-30"", ""Notebook"", ""Stationery"", ""1"", ""50000"", ""Da Nang"", ""VND""]",invalid_order_date
+11,"[""ORD001"", ""1"", ""2026-09-01"", ""Notebook"", ""Stationery"", ""2"", ""50000"", ""Ho Chi Minh City"", ""VND""]",duplicate_order_line

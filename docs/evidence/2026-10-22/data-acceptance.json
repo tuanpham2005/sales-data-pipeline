@@ -1,0 +1,9 @@
+{
+  "cleaned_rows": 6,
+  "rejected_rows": 4,
+  "outputs": 7,
+  "revenue": "670000.00",
+  "dashboard_rows_match_s3": true,
+  "repeated_output_keys_and_etags_identical": true,
+  "category_total_matches": true
+}

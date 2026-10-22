@@ -1,0 +1,224 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "role": {
+      "Role": {
+        "Path": "/",
+        "RoleName": "fcj-sales-lambda-role",
+        "RoleId": "AROA6MDQ7VE2KY7HAAJX7",
+        "Arn": "arn:aws:iam::988079434036:role/fcj-sales-lambda-role",
+        "CreateDate": "2026-10-06T07:43:54+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "Allows Lambda functions to call AWS services on your behalf.",
+        "MaxSessionDuration": 3600,
+        "RoleLastUsed": {
+          "LastUsedDate": "2026-10-06T09:24:53+00:00",
+          "Region": "ap-southeast-2"
+        }
+      }
+    },
+    "attached": {
+      "AttachedPolicies": [
+        {
+          "PolicyName": "AWSLambdaBasicExecutionRole",
+          "PolicyArn": "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+        }
+      ]
+    },
+    "inline": {
+      "PolicyNames": [
+        "fcj-sales-s3-access"
+      ]
+    },
+    "workgroup": {
+      "WorkGroup": {
+        "Name": "primary",
+        "State": "ENABLED",
+        "Configuration": {
+          "ResultConfiguration": {},
+          "EnforceWorkGroupConfiguration": false,
+          "PublishCloudWatchMetricsEnabled": true,
+          "RequesterPaysEnabled": false,
+          "EngineVersion": {
+            "SelectedEngineVersion": "AUTO",
+            "EffectiveEngineVersion": "Athena engine version 3"
+          },
+          "EnableMinimumEncryptionConfiguration": false
+        },
+        "CreationTime": "2026-08-26T08:19:20.099000+00:00"
+      }
+    },
+    "logs": {
+      "events": [],
+      "searchedLogStreams": [],
+      "nextToken": "Bxkq6kVGFtq2y_MoigeqscPOdhXVbhiVtLoAmXb5jCqEUxButwoaTx-ClZUBLoFpMUOFLsV4FfyWVRhMwdJ79a1SyiIZR11TeyF6aQxdzZSv_afkzGWWOYLi7MCJndL1VxetSnET4guGpGYviJ_fGIj0aM45DEu8qF3NycsoOs98EewvzoLqdC-XxgWQ021VkKMee8NLSMRGGFjpFe9zClBIE37GXVikVqvCHKV31-3G5JX7Nuk5yjoD07h8ax5MDdfGGQ3XzG_THOoxbSzQ-7W803f73JssZBzRzL858ptPZbW5akEFZfHMvobDj5iVPtO2GDYCHId9DDFNNg_k7g"
+    },
+    "function_package": {
+      "Configuration": {
+        "FunctionName": "fcj-sales-processor",
+        "FunctionArn": "arn:aws:lambda:ap-southeast-2:988079434036:function:fcj-sales-processor",
+        "Runtime": "python3.13",
+        "Role": "arn:aws:iam::988079434036:role/fcj-sales-lambda-role",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 3976,
+        "Description": "",
+        "Timeout": 30,
+        "MemorySize": 256,
+        "LastModified": "2026-10-06T08:47:47.000+0000",
+        "CodeSha256": "q0uEsc6E1UoxZ8ygMK3FymopaovF50oXseeXxXqd6RY=",
+        "Version": "$LATEST",
+        "Environment": {
+          "Variables": {
+            "SALES_BUCKET": "tuan-fcj-sales-pipeline-20261006-a7k9"
+          }
+        },
+        "TracingConfig": {
+          "Mode": "PassThrough"
+        },
+        "RevisionId": "32d449dd-7f0d-4f70-a81f-0d66b3d56edb",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+          "x86_64"
+        ],
+        "EphemeralStorage": {
+          "Size": 512
+        },
+        "SnapStart": {
+          "ApplyOn": "None",
+          "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+          "RuntimeVersionArn": "arn:aws:lambda:ap-southeast-2::runtime:a0627e8616c4eaf447133f427c7419e5ce3a39ea2bc648ccb6d03d5b7f4d96e7"
+        },
+        "LoggingConfig": {
+          "LogFormat": "Text",
+          "LogGroup": "/aws/lambda/fcj-sales-processor"
+        }
+      },
+      "Code": {
+        "RepositoryType": "S3"
+      }
+    },
+    "inline_documents": {
+      "fcj-sales-s3-access": {
+        "RoleName": "fcj-sales-lambda-role",
+        "PolicyName": "fcj-sales-s3-access",
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Sid": "ReadRawSalesData",
+              "Effect": "Allow",
+              "Action": "s3:GetObject",
+              "Resource": "arn:aws:s3:::tuan-fcj-sales-pipeline-20261006-a7k9/raw/*"
+            },
+            {
+              "Sid": "WritePipelineResults",
+              "Effect": "Allow",
+              "Action": "s3:PutObject",
+              "Resource": [
+                "arn:aws:s3:::tuan-fcj-sales-pipeline-20261006-a7k9/processed/*",
+                "arn:aws:s3:::tuan-fcj-sales-pipeline-20261006-a7k9/rejected/*"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "attached_documents": [
+      {
+        "PolicyVersion": {
+          "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "logs:CreateLogGroup",
+                  "logs:CreateLogStream",
+                  "logs:PutLogEvents"
+                ],
+                "Resource": "*"
+              }
+            ]
+          },
+          "VersionId": "v1",
+          "IsDefaultVersion": true,
+          "CreateDate": "2015-04-09T15:03:43+00:00"
+        }
+      }
+    ]
+  },
+  "warning": "Pagination warning: logs:FilterLogEvents returned a pagination token — not all results were fetched for this call. Remove the limit parameter so the server auto-paginates, or loop manually until the token is absent.",
+  "api_calls": [
+    {
+      "service": "iam",
+      "operation": "GetRole",
+      "status": "success"
+    },
+    {
+      "service": "iam",
+      "operation": "ListAttachedRolePolicies",
+      "status": "success",
+      "n_items": {
+        "AttachedPolicies": 1
+      }
+    },
+    {
+      "service": "iam",
+      "operation": "ListRolePolicies",
+      "status": "success",
+      "n_items": {
+        "PolicyNames": 1
+      }
+    },
+    {
+      "service": "athena",
+      "operation": "GetWorkGroup",
+      "status": "success"
+    },
+    {
+      "service": "logs",
+      "operation": "FilterLogEvents",
+      "status": "success",
+      "n_items": {
+        "events": 0,
+        "searchedLogStreams": 0
+      }
+    },
+    {
+      "service": "lambda",
+      "operation": "GetFunction",
+      "status": "success"
+    },
+    {
+      "service": "iam",
+      "operation": "GetRolePolicy",
+      "status": "success"
+    },
+    {
+      "service": "iam",
+      "operation": "GetPolicy",
+      "status": "success"
+    },
+    {
+      "service": "iam",
+      "operation": "GetPolicyVersion",
+      "status": "success"
+    }
+  ]
+}

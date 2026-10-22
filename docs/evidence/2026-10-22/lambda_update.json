@@ -1,0 +1,40 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "FunctionName": "fcj-sales-processor",
+    "CodeSha256": "CmiZEuJSnUmScQJqHvGRhIqA0o8VP2JPLEnbqOdWCtc=",
+    "LastUpdateStatus": "Successful",
+    "Runtime": "python3.13",
+    "MemorySize": 256,
+    "Timeout": 30,
+    "RevisionId": "0d9f0208-29ec-4803-820f-4577807a0901",
+    "LastModified": "2026-10-22T03:31:58.000+0000"
+  },
+  "api_calls": [
+    {
+      "service": "lambda",
+      "operation": "UpdateFunctionCode",
+      "status": "success",
+      "n_items": {
+        "Architectures": 1
+      }
+    },
+    {
+      "service": "lambda",
+      "operation": "GetFunctionConfiguration",
+      "status": "success",
+      "n_items": {
+        "Architectures": 1
+      }
+    },
+    {
+      "service": "lambda",
+      "operation": "GetFunctionConfiguration",
+      "status": "success",
+      "n_items": {
+        "Architectures": 1
+      }
+    }
+  ]
+}

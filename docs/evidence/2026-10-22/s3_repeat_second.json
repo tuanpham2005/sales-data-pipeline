@@ -1,0 +1,164 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "summary_head": {
+      "LastModified": "2026-10-22T03:34:49+00:00",
+      "ETag": "\"d35a26ef4595c1717345c730b9b96ebd\"",
+      "ContentLength": 1209
+    },
+    "processed": {
+      "Contents": [
+        {
+          "Key": "processed/",
+          "LastModified": "2026-10-06T07:09:09+00:00",
+          "ETag": "\"d41d8cd98f00b204e9800998ecf8427e\"",
+          "ChecksumAlgorithm": [
+            "CRC64NVME"
+          ],
+          "ChecksumType": "FULL_OBJECT",
+          "Size": 0,
+          "StorageClass": "STANDARD"
+        },
+        {
+          "Key": "processed/aggregates/category/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "LastModified": "2026-10-22T03:34:49+00:00",
+          "ETag": "\"610eec9ad85304b54daf379e3f690135\"",
+          "ChecksumAlgorithm": [
+            "CRC32"
+          ],
+          "ChecksumType": "FULL_OBJECT",
+          "Size": 119,
+          "StorageClass": "STANDARD"
+        },
+        {
+          "Key": "processed/aggregates/city/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "LastModified": "2026-10-22T03:34:49+00:00",
+          "ETag": "\"3922cb36f7ef5357a350423b3ef224e7\"",
+          "ChecksumAlgorithm": [
+            "CRC32"
+          ],
+          "ChecksumType": "FULL_OBJECT",
+          "Size": 117,
+          "StorageClass": "STANDARD"
+        },
+        {
+          "Key": "processed/aggregates/date/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "LastModified": "2026-10-22T03:34:49+00:00",
+          "ETag": "\"f170111271ac856cbd416f09b13eec98\"",
+          "ChecksumAlgorithm": [
+            "CRC32"
+          ],
+          "ChecksumType": "FULL_OBJECT",
+          "Size": 125,
+          "StorageClass": "STANDARD"
+        },
+        {
+          "Key": "processed/aggregates/product/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "LastModified": "2026-10-22T03:34:49+00:00",
+          "ETag": "\"92427af42359545fa5e02369a6cd2141\"",
+          "ChecksumAlgorithm": [
+            "CRC32"
+          ],
+          "ChecksumType": "FULL_OBJECT",
+          "Size": 178,
+          "StorageClass": "STANDARD"
+        },
+        {
+          "Key": "processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "LastModified": "2026-10-22T03:34:49+00:00",
+          "ETag": "\"fe9c838332c2168d809c45ba33980142\"",
+          "ChecksumAlgorithm": [
+            "CRC32"
+          ],
+          "ChecksumType": "FULL_OBJECT",
+          "Size": 548,
+          "StorageClass": "STANDARD"
+        },
+        {
+          "Key": "processed/summaries/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.json",
+          "LastModified": "2026-10-22T03:34:49+00:00",
+          "ETag": "\"d35a26ef4595c1717345c730b9b96ebd\"",
+          "ChecksumAlgorithm": [
+            "CRC32"
+          ],
+          "ChecksumType": "FULL_OBJECT",
+          "Size": 1209,
+          "StorageClass": "STANDARD"
+        }
+      ],
+      "Prefix": "processed/"
+    },
+    "rejected": {
+      "Contents": [
+        {
+          "Key": "rejected/",
+          "LastModified": "2026-10-06T07:09:19+00:00",
+          "ETag": "\"d41d8cd98f00b204e9800998ecf8427e\"",
+          "ChecksumAlgorithm": [
+            "CRC64NVME"
+          ],
+          "ChecksumType": "FULL_OBJECT",
+          "Size": 0,
+          "StorageClass": "STANDARD"
+        },
+        {
+          "Key": "rejected/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "LastModified": "2026-10-22T03:34:49+00:00",
+          "ETag": "\"56c3fd79a1c7ee281e79ea8258728940\"",
+          "ChecksumAlgorithm": [
+            "CRC32"
+          ],
+          "ChecksumType": "FULL_OBJECT",
+          "Size": 569,
+          "StorageClass": "STANDARD"
+        }
+      ],
+      "Prefix": "rejected/"
+    },
+    "logs": {
+      "events": [
+        {
+          "logStreamName": "2026/10/22/[$LATEST]e754133a61614397bfc8625e2a9285ba",
+          "timestamp": 1792640048236,
+          "message": "[INFO]\t2026-10-22T03:34:08.236Z\td2dc669d-bb96-45f9-87c0-726bed782670\tProcessed source=raw/sales_sample.csv valid=6 rejected=4 revenue=670000.00 VND\n",
+          "ingestionTime": 1792640049788,
+          "eventId": "39977208948392681666932896700861792543515175047284916226"
+        }
+      ],
+      "searchedLogStreams": []
+    }
+  },
+  "api_calls": [
+    {
+      "service": "s3",
+      "operation": "HeadObject",
+      "status": "success"
+    },
+    {
+      "service": "s3",
+      "operation": "ListObjectsV2",
+      "status": "success",
+      "n_items": {
+        "Contents": 7
+      }
+    },
+    {
+      "service": "s3",
+      "operation": "ListObjectsV2",
+      "status": "success",
+      "n_items": {
+        "Contents": 2
+      }
+    },
+    {
+      "service": "logs",
+      "operation": "FilterLogEvents",
+      "status": "success",
+      "n_items": {
+        "events": 1,
+        "searchedLogStreams": 0
+      }
+    }
+  ]
+}

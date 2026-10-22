@@ -1,0 +1,4 @@
+﻿city,valid_lines,distinct_orders,total_quantity,revenue
+Da Nang,1,1,4,40000.00
+Ha Noi,2,2,4,360000.00
+Ho Chi Minh City,3,2,9,270000.00

@@ -1,0 +1,2 @@
+# Optional helpers only; the business pipeline and unit tests need no pip install.
+boto3[crt]==1.43.117

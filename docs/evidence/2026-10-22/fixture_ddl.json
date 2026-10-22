@@ -1,0 +1,24 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "query_id": "135d9698-57ca-430e-8790-a28c3dc2eb38",
+    "status": {
+      "State": "SUCCEEDED",
+      "SubmissionDateTime": "2026-10-22T03:39:14.081000+00:00",
+      "CompletionDateTime": "2026-10-22T03:39:14.605000+00:00"
+    }
+  },
+  "api_calls": [
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+-- Create these as separate measures on the Sales table.
+Revenue VND = SUM(Sales[total_amount])
+
+Distinct Orders = DISTINCTCOUNT(Sales[order_id])
+
+Units Sold = SUM(Sales[quantity])
+
+Valid Line Items = COUNTROWS(Sales)

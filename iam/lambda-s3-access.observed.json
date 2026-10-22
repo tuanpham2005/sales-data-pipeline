@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadRawSalesData",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::tuan-fcj-sales-pipeline-20261006-a7k9/raw/*"
+    },
+    {
+      "Sid": "WritePipelineResults",
+      "Effect": "Allow",
+      "Action": "s3:PutObject",
+      "Resource": [
+        "arn:aws:s3:::tuan-fcj-sales-pipeline-20261006-a7k9/processed/*",
+        "arn:aws:s3:::tuan-fcj-sales-pipeline-20261006-a7k9/rejected/*"
+      ]
+    }
+  ]
+}

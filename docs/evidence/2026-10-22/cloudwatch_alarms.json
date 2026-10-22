@@ -1,0 +1,94 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "fcj-sales-lambda-errors": {},
+    "fcj-sales-lambda-duration-high": {},
+    "alarms": {
+      "MetricAlarms": [
+        {
+          "AlarmName": "fcj-sales-lambda-duration-high",
+          "AlarmArn": "arn:aws:cloudwatch:ap-southeast-2:988079434036:alarm:fcj-sales-lambda-duration-high",
+          "AlarmDescription": "FCJ lab console alarm; no notification destination configured",
+          "AlarmConfigurationUpdatedTimestamp": "2026-10-22T03:35:31.999000+00:00",
+          "ActionsEnabled": false,
+          "OKActions": [],
+          "AlarmActions": [],
+          "InsufficientDataActions": [],
+          "StateValue": "INSUFFICIENT_DATA",
+          "StateReason": "Unchecked: Initial alarm creation",
+          "StateUpdatedTimestamp": "2026-10-22T03:35:31.999000+00:00",
+          "MetricName": "Duration",
+          "Namespace": "AWS/Lambda",
+          "Statistic": "Maximum",
+          "Dimensions": [
+            {
+              "Name": "FunctionName",
+              "Value": "fcj-sales-processor"
+            }
+          ],
+          "Period": 300,
+          "EvaluationPeriods": 1,
+          "DatapointsToAlarm": 1,
+          "Threshold": 27000,
+          "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+          "TreatMissingData": "notBreaching",
+          "StateTransitionedTimestamp": "2026-10-22T03:35:31.999000+00:00"
+        },
+        {
+          "AlarmName": "fcj-sales-lambda-errors",
+          "AlarmArn": "arn:aws:cloudwatch:ap-southeast-2:988079434036:alarm:fcj-sales-lambda-errors",
+          "AlarmDescription": "FCJ lab console alarm; no notification destination configured",
+          "AlarmConfigurationUpdatedTimestamp": "2026-10-22T03:35:30.642000+00:00",
+          "ActionsEnabled": false,
+          "OKActions": [],
+          "AlarmActions": [],
+          "InsufficientDataActions": [],
+          "StateValue": "INSUFFICIENT_DATA",
+          "StateReason": "Unchecked: Initial alarm creation",
+          "StateUpdatedTimestamp": "2026-10-22T03:35:30.642000+00:00",
+          "MetricName": "Errors",
+          "Namespace": "AWS/Lambda",
+          "Statistic": "Sum",
+          "Dimensions": [
+            {
+              "Name": "FunctionName",
+              "Value": "fcj-sales-processor"
+            }
+          ],
+          "Period": 300,
+          "EvaluationPeriods": 1,
+          "DatapointsToAlarm": 1,
+          "Threshold": 1,
+          "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+          "TreatMissingData": "notBreaching",
+          "StateTransitionedTimestamp": "2026-10-22T03:35:30.642000+00:00"
+        }
+      ],
+      "CompositeAlarms": [],
+      "LogAlarms": []
+    }
+  },
+  "api_calls": [
+    {
+      "service": "cloudwatch",
+      "operation": "PutMetricAlarm",
+      "status": "success"
+    },
+    {
+      "service": "cloudwatch",
+      "operation": "PutMetricAlarm",
+      "status": "success"
+    },
+    {
+      "service": "cloudwatch",
+      "operation": "DescribeAlarms",
+      "status": "success",
+      "n_items": {
+        "MetricAlarms": 2,
+        "CompositeAlarms": 0,
+        "LogAlarms": 0
+      }
+    }
+  ]
+}

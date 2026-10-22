@@ -1,0 +1,4 @@
+﻿order_date,valid_lines,distinct_orders,total_quantity,revenue
+2026-09-01,2,1,7,150000.00
+2026-09-02,2,2,5,340000.00
+2026-09-03,2,2,5,180000.00

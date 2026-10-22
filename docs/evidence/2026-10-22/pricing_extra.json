@@ -1,0 +1,989 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "lambda_requests": [
+      {
+        "sku": "ZW6UHD4Q6EPUCZWU",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AWSLambda",
+          "groupDescription": "Invocation call for a Lambda function",
+          "usagetype": "APS2-Request",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AWS Lambda",
+          "operation": "",
+          "group": "AWS-Lambda-Requests"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Request",
+            "endRange": "Inf",
+            "description": "AWS Lambda - Total Requests - Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "ZW6UHD4Q6EPUCZWU.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000002000"
+            }
+          }
+        ]
+      }
+    ],
+    "alarms": [
+      {
+        "sku": "95PNPVC5WW5J8FN4",
+        "attributes": {
+          "alarmType": "Composite",
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonCloudWatch",
+          "groupDescription": "CloudWatch Alarms",
+          "usagetype": "APS2-CW:CompositeAlarmMonitorUsage",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AmazonCloudWatch",
+          "operation": "",
+          "group": "Alarm"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Alarms",
+            "endRange": "Inf",
+            "description": "$0.50 per composite alarm month - Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "95PNPVC5WW5J8FN4.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.5000000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "9FZA8ZKS9CGQBUTK",
+        "attributes": {
+          "alarmType": "Standard",
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonCloudWatch",
+          "groupDescription": "CloudWatch Alarms",
+          "usagetype": "APS2-CW:AlarmMonitorUsage",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AmazonCloudWatch",
+          "operation": "",
+          "group": "Alarm"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Alarms",
+            "endRange": "Inf",
+            "description": "$0.10 per alarm metric month (standard resolution) - Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "9FZA8ZKS9CGQBUTK.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.1000000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "BPS6MYU7VDHCKGE8",
+        "attributes": {
+          "alarmType": "Standard",
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonCloudWatch",
+          "groupDescription": "CloudWatch Alarms evaluting log queries",
+          "usagetype": "APS2-CW:LogAlarmMonitorUsage",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AmazonCloudWatch",
+          "operation": "",
+          "group": "Log Alarm"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Alarms",
+            "endRange": "Inf",
+            "description": "$0.10 per Alarm in Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "BPS6MYU7VDHCKGE8.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.1000000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "ECRN87GMBQDZ7EHJ",
+        "attributes": {
+          "alarmType": "Standard",
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonCloudWatch",
+          "groupDescription": "CloudWatch Alarms evaluating Metrics Insights queries",
+          "usagetype": "APS2-CW:MetricInsightAlarmUsage",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AmazonCloudWatch",
+          "operation": "",
+          "group": "Metrics Insights Alarms"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Alarms",
+            "endRange": "Inf",
+            "description": "$0.10 per metric analyzed by the alarm per month",
+            "appliesTo": [],
+            "rateCode": "ECRN87GMBQDZ7EHJ.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.1000000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "GQXUGKHQC4D2ZDDJ",
+        "attributes": {
+          "alarmType": "High Resolution",
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonCloudWatch",
+          "groupDescription": "CloudWatch Alarms",
+          "usagetype": "APS2-CW:HighResAlarmMonitorUsage",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AmazonCloudWatch",
+          "operation": "",
+          "group": "Alarm"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Alarms",
+            "endRange": "Inf",
+            "description": "$0.30 per alarm metric month (high resolution) - Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "GQXUGKHQC4D2ZDDJ.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.3000000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "KSPH464PMQ6EPQFN",
+        "attributes": {
+          "alarmType": "Standard",
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonCloudWatch",
+          "groupDescription": "CloudWatch Alarms Evaluating PromQL Queries",
+          "usagetype": "APS2-CW:PromQLAlarmMonitorUsage",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AmazonCloudWatch",
+          "operation": "",
+          "group": "PromQL Alarm"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Alarms",
+            "endRange": "Inf",
+            "description": "$0.10 per Alarm in Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "KSPH464PMQ6EPQFN.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.1000000000"
+            }
+          }
+        ]
+      }
+    ],
+    "s3_requests": [
+      {
+        "sku": "238A3RM2THEXZKYJ",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "PUT/COPY/POST or LIST requests to Express One Zone",
+          "usagetype": "APS2-Requests-XZ-Tier1",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-XZ-Tier1"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.00124 per 1,000 PUT Requests/COPY/POST or LIST Requests to Express One Zone",
+            "appliesTo": [],
+            "rateCode": "238A3RM2THEXZKYJ.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000012400"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "2NWK2WN5TE9A8P2Q",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Tier1 Annotation Requests",
+          "usagetype": "APS2-Requests-Annotation-Tier1",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-Tier1"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.0055 per 1,000 Tier1 Annotation Requests",
+            "appliesTo": [],
+            "rateCode": "2NWK2WN5TE9A8P2Q.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000055000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "2ZY9KYR9S6MDZT3F",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Data Scanned by S3 Select in Standard-Infrequent Access",
+          "usagetype": "APS2-Select-Scanned-SIA-Bytes",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-SIA-Select-Scanned"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.00225 per GB - for bytes scanned by S3 Select in Standard-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "2ZY9KYR9S6MDZT3F.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0022500000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "4CR9D3V2S83JXCWY",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Data Scanned by S3 Select in One Zone-Infrequent Access",
+          "usagetype": "APS2-Select-Scanned-ZIA-Bytes",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-ZIA-Select-Scanned"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.00225 per GB - for bytes scanned by S3 Select in One Zone-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "4CR9D3V2S83JXCWY.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0022500000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "5MDYZUR3QKBAK6X4",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Data Returned by S3 Select in Standard",
+          "usagetype": "APS2-Select-Returned-Bytes",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-Select-Returned"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.0008 per GB - for bytes returned by S3 Select in Standard",
+            "appliesTo": [],
+            "rateCode": "5MDYZUR3QKBAK6X4.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0008000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "8XFA2J86SSWPB36F",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Data Returned by S3 Select in One Zone-Infrequent Access",
+          "usagetype": "APS2-Select-Returned-ZIA-Bytes",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-ZIA-Select-Returned"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.01 per GB - for bytes returned by S3 Select in One Zone-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "8XFA2J86SSWPB36F.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0100000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "9M32AUTAVUWHAWN8",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Expedited Glacier Restore Requests",
+          "usagetype": "APS2-Requests-Tier6",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-Tier6"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.012 per Expedited Glacier request",
+            "appliesTo": [],
+            "rateCode": "9M32AUTAVUWHAWN8.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0120000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "9Y7RFZ2JEBFAFT9Z",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "GET and all other requests  to Standard-Infrequent Access",
+          "usagetype": "APS2-Requests-SIA-Tier2",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-SIA-Tier2"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.01 per 10,000 GET and all other requests  to Standard-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "9Y7RFZ2JEBFAFT9Z.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000010000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "AGFN92XHFRX8V4N6",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Object Retrieval in One Zone-Infrequent Access",
+          "usagetype": "APS2-Retrieval-ZIA",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-ZIA-Retrieval"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.01 per GB - flat fee for all bytes retrieved in One Zone-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "AGFN92XHFRX8V4N6.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0100000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "AU4JDGP2HMYMK5CQ",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Object Retrieval in Standard-Infrequent Access",
+          "usagetype": "APS2-Retrieval-SIA",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-SIA-Retrieval"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.01 per GB - flat fee for all bytes retrieved in Standard-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "AU4JDGP2HMYMK5CQ.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0100000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "DBD4VHBNRUX697CC",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "PUT/COPY/POST or LIST requests to FSx for ONTAP",
+          "usagetype": "APS2-Requests-FSXONTAP-Tier1",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-FSXONTAP-Tier1"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.00124 per 1,000 PUT Requests/COPY/POST or LIST Requests to FSx for ONTAP",
+            "appliesTo": [],
+            "rateCode": "DBD4VHBNRUX697CC.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000012400"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "EMXR4YQP5KMKAQNM",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Data Returned by S3 Select in Standard-Infrequent Access",
+          "usagetype": "APS2-Select-Returned-SIA-Bytes",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-SIA-Select-Returned"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.01 per GB - for bytes returned by S3 Select in Standard-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "EMXR4YQP5KMKAQNM.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0100000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "ENK7EF4CP7GVTVA7",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Object Retrieval in Express One Zone",
+          "usagetype": "APS2-Retrieval-XZ",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-XZ-Retrieval"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.00066 per GB for Object Retrieval in Express One Zone",
+            "appliesTo": [],
+            "rateCode": "ENK7EF4CP7GVTVA7.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0006600000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "FNFDJEY4HU4FAC2S",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "GET and all other requests to FSx for ONTAP",
+          "usagetype": "APS2-Requests-FSXONTAP-Tier2",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-FSXONTAP-Tier2"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.000033 per 1,000 GET and All Other Requests to FSx for ONTAP",
+            "appliesTo": [],
+            "rateCode": "FNFDJEY4HU4FAC2S.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000000330"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "HPKSVARC3NQY74UF",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "PUT/COPY/POST or LIST requests to FSx for OpenZFS",
+          "usagetype": "APS2-Requests-FSXOPENZFS-Tier1",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-FSXOPENZFS-Tier1"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.00124 per 1,000 PUT Requests/COPY/POST or LIST Requests to FSx for OpenZFS",
+            "appliesTo": [],
+            "rateCode": "HPKSVARC3NQY74UF.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000012400"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "M3VWRCZ8TC7JARQ5",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "GET and all other requests to FSx for OpenZFS",
+          "usagetype": "APS2-Requests-FSXOPENZFS-Tier2",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-FSXOPENZFS-Tier2"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.000033 per 1,000 GET and All Other Requests to FSx for OpenZFS",
+            "appliesTo": [],
+            "rateCode": "M3VWRCZ8TC7JARQ5.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000000330"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "MFF455QRNPVA6CXM",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Object Upload in Express One Zone",
+          "usagetype": "APS2-Upload-XZ",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-XZ-Upload"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.00352 per GB for Object Upload in Express One Zone",
+            "appliesTo": [],
+            "rateCode": "MFF455QRNPVA6CXM.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0035200000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "N5U3RJMMG2RY7EHS",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "GET and all other requests to Express One Zone",
+          "usagetype": "APS2-Requests-XZ-Tier2",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-XZ-Tier2"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.000033 per 1,000 GET and All Other Requests to Express One Zone",
+            "appliesTo": [],
+            "rateCode": "N5U3RJMMG2RY7EHS.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000000330"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "P3HNU8WAKHAKB334",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Data Scanned by S3 Select in Standard",
+          "usagetype": "APS2-Select-Scanned-Bytes",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-Select-Scanned"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.00225 per GB - for bytes scanned by S3 Select in Standard",
+            "appliesTo": [],
+            "rateCode": "P3HNU8WAKHAKB334.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0022500000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "TGJT3CXRB4NXHVV2",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "GET and all other requests to One Zone-Infrequent Access",
+          "usagetype": "APS2-Requests-ZIA-Tier2",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-ZIA-Tier2"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.01 per 10,000 GET and all other requests  to One Zone-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "TGJT3CXRB4NXHVV2.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000010000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "U4DFWUZRRJK76GFK",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "PUT/COPY/POST or LIST requests",
+          "usagetype": "APS2-Requests-Tier1",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-Tier1"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.0055 per 1,000 PUT, COPY, POST, or LIST requests",
+            "appliesTo": [],
+            "rateCode": "U4DFWUZRRJK76GFK.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000055000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "UR7KE2HZTT5EJ5XE",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "GET and all other requests to AWS Backup",
+          "usagetype": "APS2-Requests-BACKUP-Tier2",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-BACKUP-Tier2"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.000033 per 1,000 GET and All Other Requests to AWS Backup",
+            "appliesTo": [],
+            "rateCode": "UR7KE2HZTT5EJ5XE.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000000330"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "V7EAE6HYNRXWG4ZH",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Bulk Glacier Restore Requests",
+          "usagetype": "APS2-Requests-Tier5",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-Tier5"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.00 per 1,000 - Bulk Glacier requests",
+            "appliesTo": [],
+            "rateCode": "V7EAE6HYNRXWG4ZH.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "XR2KPYJXFYD85X8N",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "Tier2 Annotation Requests",
+          "usagetype": "APS2-Requests-Annotation-Tier2",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-Tier2"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.00044 per 1,000 Tier2 Annotation Requests",
+            "appliesTo": [],
+            "rateCode": "XR2KPYJXFYD85X8N.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000004400"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "XUU26CC3MT7XF959",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "PUT/COPY/POST or LIST requests to One Zone-Infrequent Access",
+          "usagetype": "APS2-Requests-ZIA-Tier1",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-ZIA-Tier1"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.01 per 1,000 PUT, COPY, POST or LIST requests to One Zone-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "XUU26CC3MT7XF959.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000100000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "YSYKVRSH5NCYAHNN",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "PUT/COPY/POST or LIST requests to AWS Backup",
+          "usagetype": "APS2-Requests-BACKUP-Tier1",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-BACKUP-Tier1"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.00124 per 1,000 PUT Requests/COPY/POST or LIST Requests to AWS Backup",
+            "appliesTo": [],
+            "rateCode": "YSYKVRSH5NCYAHNN.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000012400"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "ZE67FX933AEQ43H2",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "GET and all other requests",
+          "usagetype": "APS2-Requests-Tier2",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-Tier2"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.0044 per 10,000 GET and all other requests",
+            "appliesTo": [],
+            "rateCode": "ZE67FX933AEQ43H2.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000004400"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "ZX6QGNUEJCJQ97R5",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "groupDescription": "PUT/COPY/POST or LIST requests to Standard-Infrequent Access",
+          "usagetype": "APS2-Requests-SIA-Tier1",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "operation": "",
+          "group": "S3-API-SIA-Tier1"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Requests",
+            "endRange": "Inf",
+            "description": "$0.01 per 1,000 PUT, COPY, POST or LIST requests to Standard-Infrequent Access",
+            "appliesTo": [],
+            "rateCode": "ZX6QGNUEJCJQ97R5.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000100000"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "api_calls": [
+    {
+      "service": "pricing",
+      "operation": "GetProducts",
+      "status": "success",
+      "n_items": {
+        "PriceList": 1
+      }
+    },
+    {
+      "service": "pricing",
+      "operation": "GetProducts",
+      "status": "success",
+      "n_items": {
+        "PriceList": 6
+      }
+    },
+    {
+      "service": "pricing",
+      "operation": "GetProducts",
+      "status": "success",
+      "n_items": {
+        "PriceList": 28
+      }
+    }
+  ]
+}

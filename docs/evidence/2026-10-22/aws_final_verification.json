@@ -1,0 +1,368 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "lambda": {
+      "FunctionName": "fcj-sales-processor",
+      "Runtime": "python3.13",
+      "MemorySize": 256,
+      "Timeout": 30,
+      "Handler": "lambda_function.lambda_handler",
+      "CodeSha256": "CmiZEuJSnUmScQJqHvGRhIqA0o8VP2JPLEnbqOdWCtc=",
+      "State": "Active",
+      "LastUpdateStatus": "Successful",
+      "Role": "arn:aws:iam::988079434036:role/fcj-sales-lambda-role",
+      "SALES_BUCKET": "tuan-fcj-sales-pipeline-20261006-a7k9"
+    },
+    "raw_table": {
+      "Name": "sales_cleaned_raw",
+      "DatabaseName": "fcj_sales_db",
+      "TableType": "EXTERNAL_TABLE",
+      "Parameters": {
+        "skip.header.line.count": "1",
+        "transient_lastDdlTime": "1792639877",
+        "classification": "csv",
+        "EXTERNAL": "TRUE"
+      },
+      "StorageDescriptor": {
+        "Columns": [
+          {
+            "Name": "order_id",
+            "Type": "string"
+          },
+          {
+            "Name": "line_id",
+            "Type": "string"
+          },
+          {
+            "Name": "order_date",
+            "Type": "string"
+          },
+          {
+            "Name": "product",
+            "Type": "string"
+          },
+          {
+            "Name": "category",
+            "Type": "string"
+          },
+          {
+            "Name": "quantity",
+            "Type": "string"
+          },
+          {
+            "Name": "unit_price",
+            "Type": "string"
+          },
+          {
+            "Name": "city",
+            "Type": "string"
+          },
+          {
+            "Name": "currency",
+            "Type": "string"
+          },
+          {
+            "Name": "total_amount",
+            "Type": "string"
+          }
+        ],
+        "Location": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned",
+        "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+        "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+        "Compressed": false,
+        "NumberOfBuckets": -1,
+        "SerdeInfo": {
+          "SerializationLibrary": "org.apache.hadoop.hive.serde2.OpenCSVSerde",
+          "Parameters": {
+            "quoteChar": "\"",
+            "escapeChar": "\\",
+            "separatorChar": ",",
+            "serialization.format": "1"
+          }
+        },
+        "BucketColumns": [],
+        "SortColumns": [],
+        "Parameters": {},
+        "SkewedInfo": {
+          "SkewedColumnNames": [],
+          "SkewedColumnValues": [],
+          "SkewedColumnValueLocationMaps": {}
+        },
+        "StoredAsSubDirectories": false
+      }
+    },
+    "view": {
+      "Name": "sales_cleaned",
+      "DatabaseName": "fcj_sales_db",
+      "TableType": "VIRTUAL_VIEW",
+      "Parameters": {
+        "presto_view": "true",
+        "comment": "Presto View"
+      },
+      "StorageDescriptor": {
+        "Columns": [
+          {
+            "Name": "order_id",
+            "Type": "string"
+          },
+          {
+            "Name": "line_id",
+            "Type": "string"
+          },
+          {
+            "Name": "order_date",
+            "Type": "date"
+          },
+          {
+            "Name": "product",
+            "Type": "string"
+          },
+          {
+            "Name": "category",
+            "Type": "string"
+          },
+          {
+            "Name": "quantity",
+            "Type": "bigint"
+          },
+          {
+            "Name": "unit_price",
+            "Type": "decimal(38,2)"
+          },
+          {
+            "Name": "city",
+            "Type": "string"
+          },
+          {
+            "Name": "currency",
+            "Type": "string"
+          },
+          {
+            "Name": "total_amount",
+            "Type": "decimal(38,2)"
+          },
+          {
+            "Name": "source_path",
+            "Type": "string"
+          }
+        ],
+        "Location": "",
+        "Compressed": false,
+        "NumberOfBuckets": 0,
+        "SerdeInfo": {},
+        "SortColumns": [],
+        "StoredAsSubDirectories": false
+      }
+    },
+    "workgroup": {
+      "WorkGroup": {
+        "Name": "fcj-sales-workgroup",
+        "State": "ENABLED",
+        "Configuration": {
+          "ResultConfiguration": {
+            "OutputLocation": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/",
+            "EncryptionConfiguration": {
+              "EncryptionOption": "SSE_S3"
+            },
+            "ExpectedBucketOwner": "988079434036"
+          },
+          "EnforceWorkGroupConfiguration": true,
+          "PublishCloudWatchMetricsEnabled": true,
+          "BytesScannedCutoffPerQuery": 10485760,
+          "RequesterPaysEnabled": false,
+          "EngineVersion": {
+            "SelectedEngineVersion": "AUTO",
+            "EffectiveEngineVersion": "Athena engine version 3"
+          },
+          "EnableMinimumEncryptionConfiguration": false
+        },
+        "Description": "FCJ small-file synthetic sales pipeline",
+        "CreationTime": "2026-10-22T03:30:44.730000+00:00"
+      }
+    },
+    "alarms": {
+      "MetricAlarms": [
+        {
+          "AlarmName": "fcj-sales-lambda-duration-high",
+          "AlarmArn": "arn:aws:cloudwatch:ap-southeast-2:988079434036:alarm:fcj-sales-lambda-duration-high",
+          "AlarmDescription": "FCJ lab console alarm; no notification destination configured",
+          "AlarmConfigurationUpdatedTimestamp": "2026-10-22T03:35:31.999000+00:00",
+          "ActionsEnabled": false,
+          "OKActions": [],
+          "AlarmActions": [],
+          "InsufficientDataActions": [],
+          "StateValue": "OK",
+          "StateReason": "Threshold Crossed: 1 out of the last 1 datapoints [3471.92 (22/10/26 03:32:00)] was not greater than or equal to the threshold (27000.0) (minimum 1 datapoint for ALARM -> OK transition).",
+          "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-10-22T03:37:15.331+0000\",\"startDate\":\"2026-10-22T03:32:00.000+0000\",\"statistic\":\"Maximum\",\"period\":300,\"recentDatapoints\":[3471.92],\"threshold\":27000.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-10-22T03:32:00.000+0000\",\"sampleCount\":2.0,\"value\":3471.92}]}",
+          "StateUpdatedTimestamp": "2026-10-22T03:37:15.333000+00:00",
+          "MetricName": "Duration",
+          "Namespace": "AWS/Lambda",
+          "Statistic": "Maximum",
+          "Dimensions": [
+            {
+              "Name": "FunctionName",
+              "Value": "fcj-sales-processor"
+            }
+          ],
+          "Period": 300,
+          "EvaluationPeriods": 1,
+          "DatapointsToAlarm": 1,
+          "Threshold": 27000,
+          "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+          "TreatMissingData": "notBreaching",
+          "StateTransitionedTimestamp": "2026-10-22T03:37:15.333000+00:00"
+        },
+        {
+          "AlarmName": "fcj-sales-lambda-errors",
+          "AlarmArn": "arn:aws:cloudwatch:ap-southeast-2:988079434036:alarm:fcj-sales-lambda-errors",
+          "AlarmDescription": "FCJ lab console alarm; no notification destination configured",
+          "AlarmConfigurationUpdatedTimestamp": "2026-10-22T03:35:30.642000+00:00",
+          "ActionsEnabled": false,
+          "OKActions": [],
+          "AlarmActions": [],
+          "InsufficientDataActions": [],
+          "StateValue": "OK",
+          "StateReason": "Threshold Crossed: 1 out of the last 1 datapoints [0.0 (22/10/26 03:31:00)] was not greater than or equal to the threshold (1.0) (minimum 1 datapoint for ALARM -> OK transition).",
+          "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-10-22T03:36:21.496+0000\",\"startDate\":\"2026-10-22T03:31:00.000+0000\",\"statistic\":\"Sum\",\"period\":300,\"recentDatapoints\":[0.0],\"threshold\":1.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-10-22T03:31:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0}]}",
+          "StateUpdatedTimestamp": "2026-10-22T03:36:21.499000+00:00",
+          "MetricName": "Errors",
+          "Namespace": "AWS/Lambda",
+          "Statistic": "Sum",
+          "Dimensions": [
+            {
+              "Name": "FunctionName",
+              "Value": "fcj-sales-processor"
+            }
+          ],
+          "Period": 300,
+          "EvaluationPeriods": 1,
+          "DatapointsToAlarm": 1,
+          "Threshold": 1,
+          "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+          "TreatMissingData": "notBreaching",
+          "StateTransitionedTimestamp": "2026-10-22T03:36:21.499000+00:00"
+        }
+      ],
+      "CompositeAlarms": [],
+      "LogAlarms": []
+    },
+    "logs": {
+      "events": [
+        {
+          "logStreamName": "2026/10/22/[$LATEST]e754133a61614397bfc8625e2a9285ba",
+          "timestamp": 1792640048236,
+          "message": "[INFO]\t2026-10-22T03:34:08.236Z\td2dc669d-bb96-45f9-87c0-726bed782670\tProcessed source=raw/sales_sample.csv valid=6 rejected=4 revenue=670000.00 VND\n",
+          "ingestionTime": 1792640049788,
+          "eventId": "39977208948392681666932896700861792543515175047284916226"
+        },
+        {
+          "logStreamName": "2026/10/22/[$LATEST]e754133a61614397bfc8625e2a9285ba",
+          "timestamp": 1792640088476,
+          "message": "[INFO]\t2026-10-22T03:34:48.476Z\tb7998e7e-4642-4365-876b-df34767f9053\tProcessed source=raw/sales_sample.csv valid=6 rejected=4 revenue=670000.00 VND\n",
+          "ingestionTime": 1792640097123,
+          "eventId": "39977209845774668455805171973483218019654292536716034049"
+        }
+      ],
+      "searchedLogStreams": []
+    },
+    "Invocations": {
+      "Label": "Invocations",
+      "Datapoints": [
+        {
+          "Timestamp": "2026-10-22T03:34:00+00:00",
+          "Sum": 2,
+          "Unit": "Count"
+        }
+      ]
+    },
+    "Errors": {
+      "Label": "Errors",
+      "Datapoints": [
+        {
+          "Timestamp": "2026-10-22T03:34:00+00:00",
+          "Sum": 0,
+          "Unit": "Count"
+        }
+      ]
+    },
+    "Duration": {
+      "Label": "Duration",
+      "Datapoints": [
+        {
+          "Timestamp": "2026-10-22T03:34:00+00:00",
+          "Maximum": 3471.92,
+          "Unit": "Milliseconds"
+        }
+      ]
+    }
+  },
+  "api_calls": [
+    {
+      "service": "lambda",
+      "operation": "GetFunctionConfiguration",
+      "status": "success",
+      "n_items": {
+        "Architectures": 1
+      }
+    },
+    {
+      "service": "glue",
+      "operation": "GetTable",
+      "status": "success"
+    },
+    {
+      "service": "glue",
+      "operation": "GetTable",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetWorkGroup",
+      "status": "success"
+    },
+    {
+      "service": "cloudwatch",
+      "operation": "DescribeAlarms",
+      "status": "success",
+      "n_items": {
+        "MetricAlarms": 2,
+        "CompositeAlarms": 0,
+        "LogAlarms": 0
+      }
+    },
+    {
+      "service": "logs",
+      "operation": "FilterLogEvents",
+      "status": "success",
+      "n_items": {
+        "events": 2,
+        "searchedLogStreams": 0
+      }
+    },
+    {
+      "service": "cloudwatch",
+      "operation": "GetMetricStatistics",
+      "status": "success",
+      "n_items": {
+        "Datapoints": 1
+      }
+    },
+    {
+      "service": "cloudwatch",
+      "operation": "GetMetricStatistics",
+      "status": "success",
+      "n_items": {
+        "Datapoints": 1
+      }
+    },
+    {
+      "service": "cloudwatch",
+      "operation": "GetMetricStatistics",
+      "status": "success",
+      "n_items": {
+        "Datapoints": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "FCJ Sales Analytics",
+  "dataColors": ["#157f86", "#ff9900", "#5271a4", "#9d5c91", "#598b50"],
+  "background": "#f5f7fa",
+  "foreground": "#182738",
+  "tableAccent": "#157f86"
+}

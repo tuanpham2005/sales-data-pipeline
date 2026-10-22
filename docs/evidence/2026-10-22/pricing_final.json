@@ -1,0 +1,148 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "cw_ingestion": [
+      {
+        "sku": "VSJ57WXDQXM2VKQK",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonCloudWatch",
+          "groupDescription": "Existing system, application, and custom log files",
+          "usagetype": "APS2-DataProcessing-Bytes",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AmazonCloudWatch",
+          "operation": "PutLogEvents",
+          "version": "Current",
+          "group": "Ingested Logs",
+          "logsDestination": "Amazon CloudWatch Logs"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB",
+            "endRange": "Inf",
+            "description": "$0.67 per GB custom log data ingested in Standard log class - Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "VSJ57WXDQXM2VKQK.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.6700000000"
+            }
+          }
+        ]
+      }
+    ],
+    "cw_storage": [
+      {
+        "sku": "SXS5MH23MB3SHA9C",
+        "attributes": {
+          "storageMedia": "Amazon S3",
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonCloudWatch",
+          "groupDescription": "Amazon CloudWatch Logs Storage Current version",
+          "usagetype": "APS2-TimedStorage-ByteHrs",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AmazonCloudWatch",
+          "operation": "",
+          "version": "Current",
+          "group": "Amazon CloudWatch Standard Storage pricing current"
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB-Mo",
+            "endRange": "Inf",
+            "description": "$0.033 per GB-mo of log storage - Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "SXS5MH23MB3SHA9C.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0330000000"
+            }
+          }
+        ]
+      }
+    ],
+    "glue": [
+      {
+        "sku": "6PDFTXNWT277TXP4",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AWSGlue",
+          "usagetype": "APS2-Catalog-Request",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AWS Glue",
+          "operation": "Request",
+          "group": "Data catalog requests"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Request",
+            "endRange": "Inf",
+            "description": "$1 per 1,000,000 requests for AWS Glue Data Catalog request",
+            "appliesTo": [],
+            "rateCode": "6PDFTXNWT277TXP4.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000010000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "GR6BUK2D8AMYADSU",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AWSGlue",
+          "usagetype": "APS2-Catalog-Storage",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AWS Glue",
+          "operation": "Storage",
+          "group": "Data catalog storage"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Obj-Month",
+            "endRange": "Inf",
+            "description": "$1 per 100,000 objects per month for AWS Glue Data Catalog storage",
+            "appliesTo": [],
+            "rateCode": "GR6BUK2D8AMYADSU.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000100000"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "api_calls": [
+    {
+      "service": "pricing",
+      "operation": "GetProducts",
+      "status": "success",
+      "n_items": {
+        "PriceList": 1
+      }
+    },
+    {
+      "service": "pricing",
+      "operation": "GetProducts",
+      "status": "success",
+      "n_items": {
+        "PriceList": 1
+      }
+    },
+    {
+      "service": "pricing",
+      "operation": "GetProducts",
+      "status": "success",
+      "n_items": {
+        "PriceList": 18
+      }
+    }
+  ]
+}

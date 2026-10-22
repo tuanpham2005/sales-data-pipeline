@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+data/output/
+.env
+.env.*
+
+# Local credentials, caches and reproducible build archives
+.aws/
+.kiro/settings/mcp.json
+.pytest_cache/
+*.zip
+dist/

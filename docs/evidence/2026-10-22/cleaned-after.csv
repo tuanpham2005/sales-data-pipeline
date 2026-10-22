@@ -1,0 +1,7 @@
+order_id,line_id,order_date,product,category,quantity,unit_price,city,currency,total_amount
+ORD001,1,2026-09-01,Notebook,Stationery,2,50000.00,Ho Chi Minh City,VND,100000.00
+ORD001,2,2026-09-01,Pen,Stationery,5,10000.00,Ho Chi Minh City,VND,50000.00
+ORD002,1,2026-09-02,Backpack,Bags,1,300000.00,Ha Noi,VND,300000.00
+ORD003,1,2026-09-02,Marker,Stationery,4,10000.00,Da Nang,VND,40000.00
+ORD004,1,2026-09-03,Bottle,Accessories,2,60000.00,Ho Chi Minh City,VND,120000.00
+ORD005,1,2026-09-03,Pencil Set,Stationery,3,20000.00,Ha Noi,VND,60000.00

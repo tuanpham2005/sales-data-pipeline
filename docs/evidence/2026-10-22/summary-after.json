@@ -1,0 +1,23 @@
+{
+  "input_rows": 10,
+  "valid_rows": 6,
+  "rejected_rows": 4,
+  "rejection_rate_percent": 40.0,
+  "distinct_valid_orders": 5,
+  "total_quantity": 17,
+  "total_revenue": "670000.00",
+  "currency": "VND",
+  "status": "processed",
+  "source_bucket": "tuan-fcj-sales-pipeline-20261006-a7k9",
+  "source_key": "raw/sales_sample.csv",
+  "source_etag": "7f0cc6af7bbe7211495de49890cc72fb",
+  "outputs": {
+    "cleaned": "processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+    "rejected": "rejected/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+    "summary": "processed/summaries/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.json",
+    "revenue_by_date": "processed/aggregates/date/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+    "revenue_by_product": "processed/aggregates/product/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+    "revenue_by_category": "processed/aggregates/category/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+    "revenue_by_city": "processed/aggregates/city/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv"
+  }
+}

@@ -1,0 +1,3 @@
+order_id,line_id,order_date,product,category,quantity,unit_price,city,currency
+TST001,1,2026-09-04,"Bút, ""đỏ"" – Việt Nam",Stationery,2,10.25,TP. Hồ Chí Minh,VND
+TST002,1,2026-09-04,"Sổ tay ""A"", khổ nhỏ",Stationery,3,5.00,Hà Nội,VND

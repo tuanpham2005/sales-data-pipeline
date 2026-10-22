@@ -1,0 +1,9 @@
+{
+  "exported_at_utc": "2026-10-22T03:38:14.865174+00:00",
+  "query_id": "a03ac53a-8f8b-4bdf-a6b4-699a5b669a65",
+  "source": "Athena fcj_sales_db.sales_cleaned",
+  "query_completed_at_utc": "2026-10-22T03:33:14.540000+00:00",
+  "synthetic_dataset": true,
+  "row_count": 6,
+  "refresh": "manual"
+}

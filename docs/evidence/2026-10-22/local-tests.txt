@@ -1,0 +1,35 @@
+test_all_required_fields (test_extended.CsvAndBusinessTests.test_all_required_fields) ... ok
+test_duplicate_header_and_malformed_csv_fail_file (test_extended.CsvAndBusinessTests.test_duplicate_header_and_malformed_csv_fail_file) ... ok
+test_duplicate_transactions_across_files_are_not_deduplicated (test_extended.CsvAndBusinessTests.test_duplicate_transactions_across_files_are_not_deduplicated) ... ok
+test_embedded_newline_is_rejected_for_athena_csv (test_extended.CsvAndBusinessTests.test_embedded_newline_is_rejected_for_athena_csv) ... ok
+test_every_dimension_reconciles (test_extended.CsvAndBusinessTests.test_every_dimension_reconciles) ... ok
+test_numeric_limits_and_zero_price (test_extended.CsvAndBusinessTests.test_numeric_limits_and_zero_price) ... ok
+test_price_three_places_including_zero_is_rejected (test_extended.CsvAndBusinessTests.test_price_three_places_including_zero_is_rejected) ... ok
+test_quoted_comma_quotes_and_vietnamese_roundtrip (test_extended.CsvAndBusinessTests.test_quoted_comma_quotes_and_vietnamese_roundtrip) ... ok
+test_actual_body_limit_even_if_content_length_is_wrong (test_extended.LambdaBoundaryTests.test_actual_body_limit_even_if_content_length_is_wrong) ... ok
+test_bad_utf8_writes_nothing (test_extended.LambdaBoundaryTests.test_bad_utf8_writes_nothing) ... ok
+test_partial_write_is_not_an_atomic_transaction (test_extended.LambdaBoundaryTests.test_partial_write_is_not_an_atomic_transaction) ... ok
+test_same_key_updated_content_replaces_output (test_extended.LambdaBoundaryTests.test_same_key_updated_content_replaces_output) ... ok
+test_invalid_schema_creates_no_output (test_lambda.LambdaTests.test_invalid_schema_creates_no_output) ... ok
+test_manual_event_writes_seven_outputs_with_expected_totals (test_lambda.LambdaTests.test_manual_event_writes_seven_outputs_with_expected_totals) ... ok
+test_missing_environment_variable_fails (test_lambda.LambdaTests.test_missing_environment_variable_fails) ... ok
+test_output_notification_is_ignored_without_s3_access (test_lambda.LambdaTests.test_output_notification_is_ignored_without_s3_access) ... ok
+test_oversized_file_is_rejected_and_closed (test_lambda.LambdaTests.test_oversized_file_is_rejected_and_closed) ... ok
+test_repeat_event_does_not_append_new_output_objects (test_lambda.LambdaTests.test_repeat_event_does_not_append_new_output_objects) ... ok
+test_s3_configuration_test_event_is_noop (test_lambda.LambdaTests.test_s3_configuration_test_event_is_noop) ... ok
+test_s3_event_decodes_key_and_uses_etag (test_lambda.LambdaTests.test_s3_event_decodes_key_and_uses_etag) ... ok
+test_stale_event_is_skipped (test_lambda.LambdaTests.test_stale_event_is_skipped) ... ok
+test_wrong_bucket_is_rejected (test_lambda.LambdaTests.test_wrong_bucket_is_rejected) ... ok
+test_bom_and_reordered_header (test_pipeline.PipelineTests.test_bom_and_reordered_header) ... ok
+test_duplicate_line_rejected (test_pipeline.PipelineTests.test_duplicate_line_rejected) ... ok
+test_extra_column_preserved_in_rejection (test_pipeline.PipelineTests.test_extra_column_preserved_in_rejection) ... ok
+test_invalid_values (test_pipeline.PipelineTests.test_invalid_values) ... ok
+test_money_is_exact (test_pipeline.PipelineTests.test_money_is_exact) ... ok
+test_sample_totals_and_daily_reconciliation (test_pipeline.PipelineTests.test_sample_totals_and_daily_reconciliation) ... ok
+test_schema_error_is_file_error (test_pipeline.PipelineTests.test_schema_error_is_file_error) ... ok
+test_two_lines_of_same_order_allowed (test_pipeline.PipelineTests.test_two_lines_of_same_order_allowed) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.023s
+
+OK

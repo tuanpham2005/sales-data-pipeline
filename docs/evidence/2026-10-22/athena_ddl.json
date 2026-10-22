@@ -1,0 +1,172 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "executions": [
+      {
+        "file": "00_database.sql",
+        "query_id": "952bfa1a-50d9-4fa8-a4f5-574a0bb53e2b",
+        "execution": {
+          "QueryExecutionId": "952bfa1a-50d9-4fa8-a4f5-574a0bb53e2b",
+          "Query": "CREATE DATABASE IF NOT EXISTS fcj_sales_db COMMENT 'FCJ synthetic sales CSV demonstration'",
+          "StatementType": "DDL",
+          "ResultConfiguration": {
+            "OutputLocation": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/952bfa1a-50d9-4fa8-a4f5-574a0bb53e2b.txt",
+            "EncryptionConfiguration": {
+              "EncryptionOption": "SSE_S3"
+            },
+            "ExpectedBucketOwner": "988079434036"
+          },
+          "ResultReuseConfiguration": {
+            "ResultReuseByAgeConfiguration": {
+              "Enabled": false
+            }
+          },
+          "QueryExecutionContext": {},
+          "Status": {
+            "State": "SUCCEEDED",
+            "SubmissionDateTime": "2026-10-22T03:31:15.726000+00:00",
+            "CompletionDateTime": "2026-10-22T03:31:16.095000+00:00"
+          },
+          "Statistics": {
+            "EngineExecutionTimeInMillis": 294,
+            "DataScannedInBytes": 0,
+            "TotalExecutionTimeInMillis": 369,
+            "QueryQueueTimeInMillis": 39,
+            "ServicePreProcessingTimeInMillis": 14,
+            "ServiceProcessingTimeInMillis": 22,
+            "ResultReuseInformation": {
+              "ReusedPreviousResult": false
+            }
+          },
+          "WorkGroup": "fcj-sales-workgroup",
+          "EngineVersion": {
+            "SelectedEngineVersion": "AUTO",
+            "EffectiveEngineVersion": "Athena engine version 3"
+          },
+          "SubstatementType": "CREATE_DATABASE"
+        }
+      },
+      {
+        "file": "01_cleaned_table.sql",
+        "query_id": "7354b4f6-94a9-4faf-b27f-d2abf37c8e22",
+        "execution": {
+          "QueryExecutionId": "7354b4f6-94a9-4faf-b27f-d2abf37c8e22",
+          "Query": "CREATE EXTERNAL TABLE IF NOT EXISTS fcj_sales_db.sales_cleaned_raw (\n  order_id STRING, line_id STRING, order_date STRING, product STRING,\n  category STRING, quantity STRING, unit_price STRING, city STRING,\n  currency STRING, total_amount STRING\n)\nROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'\nWITH SERDEPROPERTIES ('separatorChar' = ',', 'quoteChar' = '\"', 'escapeChar' = '\\\\')\nSTORED AS TEXTFILE\nLOCATION 's3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/'\nTBLPROPERTIES ('skip.header.line.count' = '1', 'classification' = 'csv')",
+          "StatementType": "DDL",
+          "ResultConfiguration": {
+            "OutputLocation": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/7354b4f6-94a9-4faf-b27f-d2abf37c8e22.txt",
+            "EncryptionConfiguration": {
+              "EncryptionOption": "SSE_S3"
+            },
+            "ExpectedBucketOwner": "988079434036"
+          },
+          "ResultReuseConfiguration": {
+            "ResultReuseByAgeConfiguration": {
+              "Enabled": false
+            }
+          },
+          "QueryExecutionContext": {},
+          "Status": {
+            "State": "SUCCEEDED",
+            "SubmissionDateTime": "2026-10-22T03:31:17.459000+00:00",
+            "CompletionDateTime": "2026-10-22T03:31:17.858000+00:00"
+          },
+          "Statistics": {
+            "EngineExecutionTimeInMillis": 330,
+            "DataScannedInBytes": 0,
+            "TotalExecutionTimeInMillis": 399,
+            "QueryQueueTimeInMillis": 34,
+            "ServicePreProcessingTimeInMillis": 15,
+            "ServiceProcessingTimeInMillis": 20,
+            "ResultReuseInformation": {
+              "ReusedPreviousResult": false
+            }
+          },
+          "WorkGroup": "fcj-sales-workgroup",
+          "EngineVersion": {
+            "SelectedEngineVersion": "AUTO",
+            "EffectiveEngineVersion": "Athena engine version 3"
+          },
+          "SubstatementType": "CREATE_TABLE"
+        }
+      },
+      {
+        "file": "02_typed_view.sql",
+        "query_id": "add3715d-e963-49f5-94cb-418d44bde6eb",
+        "execution": {
+          "QueryExecutionId": "add3715d-e963-49f5-94cb-418d44bde6eb",
+          "Query": "CREATE OR REPLACE VIEW fcj_sales_db.sales_cleaned AS\nSELECT order_id, line_id, CAST(order_date AS DATE) AS order_date,\n       product, category, CAST(quantity AS BIGINT) AS quantity,\n       CAST(unit_price AS DECIMAL(38,2)) AS unit_price, city, currency,\n       CAST(total_amount AS DECIMAL(38,2)) AS total_amount,\n       \"$path\" AS source_path\nFROM fcj_sales_db.sales_cleaned_raw",
+          "StatementType": "DDL",
+          "ResultConfiguration": {
+            "OutputLocation": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/add3715d-e963-49f5-94cb-418d44bde6eb.txt",
+            "EncryptionConfiguration": {
+              "EncryptionOption": "SSE_S3"
+            },
+            "ExpectedBucketOwner": "988079434036"
+          },
+          "ResultReuseConfiguration": {
+            "ResultReuseByAgeConfiguration": {
+              "Enabled": false
+            }
+          },
+          "QueryExecutionContext": {},
+          "Status": {
+            "State": "SUCCEEDED",
+            "SubmissionDateTime": "2026-10-22T03:31:19.424000+00:00",
+            "CompletionDateTime": "2026-10-22T03:31:19.854000+00:00"
+          },
+          "Statistics": {
+            "EngineExecutionTimeInMillis": 360,
+            "DataScannedInBytes": 0,
+            "TotalExecutionTimeInMillis": 430,
+            "QueryQueueTimeInMillis": 37,
+            "ServicePreProcessingTimeInMillis": 14,
+            "ServiceProcessingTimeInMillis": 19,
+            "ResultReuseInformation": {
+              "ReusedPreviousResult": false
+            }
+          },
+          "WorkGroup": "fcj-sales-workgroup",
+          "EngineVersion": {
+            "SelectedEngineVersion": "AUTO",
+            "EffectiveEngineVersion": "Athena engine version 3"
+          },
+          "SubstatementType": "CREATE_VIEW"
+        }
+      }
+    ]
+  },
+  "api_calls": [
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "status": "success",
+  "stdout": "",
+  "stderr": "Error calling function call_boto3 with arguments {'service_name': 'glue', 'operation_name': 'GetDatabase', 'region_name': 'ap-southeast-2', 'params': {'Name': 'fcj_sales_db'}}: An error occurred (EntityNotFoundException) when calling the GetDatabase operation: Database fcj_sales_db not found.\n",
+  "return_value": {
+    "identity": {
+      "UserId": "AROA6MDQ7VE2AH6DY4RIM:546874e8-20e1-70d9-4677-a0d287158f68",
+      "Account": "988079434036",
+      "Arn": "arn:aws:sts::988079434036:assumed-role/AccountFullAccessRole/546874e8-20e1-70d9-4677-a0d287158f68"
+    },
+    "plan": {
+      "accountId": "988079434036",
+      "accountPlanType": "FREE",
+      "accountPlanStatus": "ACTIVE",
+      "accountPlanRemainingCredits": {
+        "amount": 179.99,
+        "unit": "USD"
+      },
+      "accountPlanExpirationDate": "2027-02-26T07:55:15.658000+00:00"
+    },
+    "lambda": {
+      "FunctionName": "fcj-sales-processor",
+      "FunctionArn": "arn:aws:lambda:ap-southeast-2:988079434036:function:fcj-sales-processor",
+      "Runtime": "python3.13",
+      "Role": "arn:aws:iam::988079434036:role/fcj-sales-lambda-role",
+      "Handler": "lambda_function.lambda_handler",
+      "CodeSize": 3976,
+      "CodeSha256": "q0uEsc6E1UoxZ8ygMK3FymopaovF50oXseeXxXqd6RY=",
+      "Timeout": 30,
+      "MemorySize": 256,
+      "LastModified": "2026-10-06T08:47:47.000+0000",
+      "State": "Active",
+      "LastUpdateStatus": "Successful",
+      "Architectures": [
+        "x86_64"
+      ],
+      "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/fcj-sales-processor"
+      },
+      "SALES_BUCKET": "tuan-fcj-sales-pipeline-20261006-a7k9"
+    },
+    "lambda_policy": {
+      "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"lambda-0260b90d-7976-4a0a-be0e-3c9bfef29639\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"s3.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:ap-southeast-2:988079434036:function:fcj-sales-processor\",\"Condition\":{\"StringEquals\":{\"AWS:SourceAccount\":\"988079434036\"},\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:s3:::tuan-fcj-sales-pipeline-20261006-a7k9\"}}}]}",
+      "RevisionId": "97063b46-0e32-4f6c-a4cd-861b583ae891"
+    },
+    "notifications": {
+      "LambdaFunctionConfigurations": [
+        {
+          "Id": "ab94dee1-2359-4a0c-aea4-ada6cc19e06b",
+          "LambdaFunctionArn": "arn:aws:lambda:ap-southeast-2:988079434036:function:fcj-sales-processor",
+          "Events": [
+            "s3:ObjectCreated:*"
+          ],
+          "Filter": {
+            "Key": {
+              "FilterRules": [
+                {
+                  "Name": "Prefix",
+                  "Value": "raw/"
+                },
+                {
+                  "Name": "Suffix",
+                  "Value": ".csv"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "objects": {
+      "contents": [
+        {
+          "Key": "athena-results/",
+          "Size": 0,
+          "ETag": "\"d41d8cd98f00b204e9800998ecf8427e\"",
+          "LastModified": "2026-10-06T07:09:28+00:00"
+        },
+        {
+          "Key": "processed/",
+          "Size": 0,
+          "ETag": "\"d41d8cd98f00b204e9800998ecf8427e\"",
+          "LastModified": "2026-10-06T07:09:09+00:00"
+        },
+        {
+          "Key": "processed/aggregates/city/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "Size": 117,
+          "ETag": "\"3922cb36f7ef5357a350423b3ef224e7\"",
+          "LastModified": "2026-10-06T09:24:50+00:00"
+        },
+        {
+          "Key": "processed/aggregates/date/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "Size": 125,
+          "ETag": "\"f170111271ac856cbd416f09b13eec98\"",
+          "LastModified": "2026-10-06T09:24:50+00:00"
+        },
+        {
+          "Key": "processed/aggregates/product/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "Size": 178,
+          "ETag": "\"92427af42359545fa5e02369a6cd2141\"",
+          "LastModified": "2026-10-06T09:24:50+00:00"
+        },
+        {
+          "Key": "processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "Size": 548,
+          "ETag": "\"fe9c838332c2168d809c45ba33980142\"",
+          "LastModified": "2026-10-06T09:24:50+00:00"
+        },
+        {
+          "Key": "processed/summaries/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.json",
+          "Size": 1080,
+          "ETag": "\"6167e4432f14eaae19042393e7a199b7\"",
+          "LastModified": "2026-10-06T09:24:50+00:00"
+        },
+        {
+          "Key": "raw/",
+          "Size": 0,
+          "ETag": "\"d41d8cd98f00b204e9800998ecf8427e\"",
+          "LastModified": "2026-10-06T07:08:59+00:00"
+        },
+        {
+          "Key": "raw/sales_sample.csv",
+          "Size": 694,
+          "ETag": "\"7f0cc6af7bbe7211495de49890cc72fb\"",
+          "LastModified": "2026-10-06T09:24:46+00:00"
+        },
+        {
+          "Key": "rejected/",
+          "Size": 0,
+          "ETag": "\"d41d8cd98f00b204e9800998ecf8427e\"",
+          "LastModified": "2026-10-06T07:09:19+00:00"
+        },
+        {
+          "Key": "rejected/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv",
+          "Size": 569,
+          "ETag": "\"56c3fd79a1c7ee281e79ea8258728940\"",
+          "LastModified": "2026-10-06T09:24:50+00:00"
+        }
+      ]
+    },
+    "public_access": {
+      "PublicAccessBlockConfiguration": {
+        "BlockPublicAcls": true,
+        "IgnorePublicAcls": true,
+        "BlockPublicPolicy": true,
+        "RestrictPublicBuckets": true
+      }
+    },
+    "encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": true,
+            "BlockedEncryptionTypes": {
+              "EncryptionType": [
+                "SSE-C"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "versioning": {},
+    "database": {
+      "error": "An error occurred (EntityNotFoundException) when calling the GetDatabase operation: Database fcj_sales_db not found."
+    },
+    "workgroups": {
+      "WorkGroups": [
+        {
+          "Name": "primary",
+          "State": "ENABLED",
+          "Description": "",
+          "CreationTime": "2026-08-26T08:19:20.099000+00:00",
+          "EngineVersion": {
+            "SelectedEngineVersion": "AUTO",
+            "EffectiveEngineVersion": "Athena engine version 3"
+          }
+        }
+      ]
+    }
+  },
+  "api_calls": [
+    {
+      "service": "sts",
+      "operation": "GetCallerIdentity",
+      "status": "success"
+    },
+    {
+      "service": "freetier",
+      "operation": "GetAccountPlanState",
+      "status": "success"
+    },
+    {
+      "service": "lambda",
+      "operation": "GetFunctionConfiguration",
+      "status": "success",
+      "n_items": {
+        "Architectures": 1
+      }
+    },
+    {
+      "service": "lambda",
+      "operation": "GetPolicy",
+      "status": "success"
+    },
+    {
+      "service": "s3",
+      "operation": "GetBucketNotificationConfiguration",
+      "status": "success",
+      "n_items": {
+        "LambdaFunctionConfigurations": 1
+      }
+    },
+    {
+      "service": "s3",
+      "operation": "ListObjectsV2",
+      "status": "success",
+      "n_items": {
+        "Contents": 11
+      }
+    },
+    {
+      "service": "s3",
+      "operation": "GetPublicAccessBlock",
+      "status": "success"
+    },
+    {
+      "service": "s3",
+      "operation": "GetBucketEncryption",
+      "status": "success"
+    },
+    {
+      "service": "s3",
+      "operation": "GetBucketVersioning",
+      "status": "success"
+    },
+    {
+      "service": "glue",
+      "operation": "GetDatabase",
+      "status": "error",
+      "error": "EntityNotFoundException: An error occurred (EntityNotFoundException) when calling the GetDatabase operation: Database fcj_sales_db not found."
+    },
+    {
+      "service": "athena",
+      "operation": "ListWorkGroups",
+      "status": "success",
+      "n_items": {
+        "WorkGroups": 1
+      }
+    }
+  ]
+}

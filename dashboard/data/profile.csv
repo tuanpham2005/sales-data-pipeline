@@ -1,0 +1,6 @@
+﻿order_id,line_id,order_date,product,category,quantity,unit_price,city,currency,total_amount,source_path
+ORD001,1,2026-09-01,Notebook,Stationery,2,50000.00,Ho Chi Minh City,VND,100000.00,s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv
+ORD001,2,2026-09-01,Pen,Stationery,5,10000.00,Ho Chi Minh City,VND,50000.00,s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv
+ORD002,1,2026-09-02,Backpack,Bags,1,300000.00,Ha Noi,VND,300000.00,s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv
+ORD003,1,2026-09-02,Marker,Stationery,4,10000.00,Da Nang,VND,40000.00,s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv
+ORD004,1,2026-09-03,Bottle,Accessories,2,60000.00,Ho Chi Minh City,VND,120000.00,s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv

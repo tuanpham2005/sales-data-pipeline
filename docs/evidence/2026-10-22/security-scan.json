@@ -1,0 +1,4 @@
+{
+  "findings": [],
+  "scope": "Source, SQL, documentation, fixtures and exported data; pattern scan only, not a full security audit"
+}

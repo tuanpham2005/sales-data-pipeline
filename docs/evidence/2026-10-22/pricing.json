@@ -1,0 +1,218 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "athena": [
+      {
+        "sku": "55T4EWW7D53ERNFG",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonAthena",
+          "freeQueryTypes": "Data definition queries (DDL), Failed Queries and statements used to create or load partitions",
+          "usagetype": "APS2-DataScannedInTB",
+          "description": "Charged for total data scanned per query with a minimum 10MB for each successful or cancelled queries",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Athena",
+          "operation": ""
+        },
+        "price_dimensions": [
+          {
+            "unit": "Terabytes",
+            "endRange": "Inf",
+            "description": "5.00 USD per Terabytes for DataScannedInTB in Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "55T4EWW7D53ERNFG.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "5.0000000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "Z3QTGYC5R2FXUJ54",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "nodeSize": "1",
+          "servicecode": "AmazonAthena",
+          "usagetype": "APS2-CodeExecutionInDPUHours",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Athena",
+          "nodeType": "NA",
+          "operation": "Spark_Execution"
+        },
+        "price_dimensions": [
+          {
+            "unit": "DPU-Hour",
+            "endRange": "Inf",
+            "description": "0.45 USD per DPU-Hour for CodeExecutionInDPUHours:Spark_Execution in Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "Z3QTGYC5R2FXUJ54.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.4500000000"
+            }
+          }
+        ]
+      },
+      {
+        "sku": "ZAAM39P6XHV6BBSM",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonAthena",
+          "usagetype": "APS2-ReservedCapacityInDPUHours",
+          "description": "Data Processing Units (DPU) in hours",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Athena",
+          "operation": ""
+        },
+        "price_dimensions": [
+          {
+            "unit": "DPU-Hour",
+            "endRange": "Inf",
+            "description": "0.36 USD per DPU-Hour for ReservedCapacityInDPUHours in Asia Pacific (Sydney)",
+            "appliesTo": [],
+            "rateCode": "ZAAM39P6XHV6BBSM.JRTCKXETXF.6YS6EN2CT7",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.3600000000"
+            }
+          }
+        ]
+      }
+    ],
+    "lambda": [
+      {
+        "sku": "4NX7CSSF3DVPXWBT",
+        "attributes": {
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AWSLambda",
+          "groupDescription": "Invocation duration weighted by memory assigned to function, measured in GB-s",
+          "usagetype": "APS2-Lambda-GB-Second",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "AWS Lambda",
+          "operation": "",
+          "group": "AWS-Lambda-Duration"
+        },
+        "price_dimensions": [
+          {
+            "unit": "Lambda-GB-Second",
+            "endRange": "6000000000",
+            "description": "AWS Lambda - Total Compute - Asia Pacific (Sydney)-Tier-1",
+            "appliesTo": [],
+            "rateCode": "4NX7CSSF3DVPXWBT.JRTCKXETXF.CUKFZ388N3",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0000166667"
+            }
+          },
+          {
+            "unit": "Lambda-GB-Second",
+            "endRange": "Inf",
+            "description": "AWS Lambda - Total Compute - Asia Pacific (Sydney)-Tier-3",
+            "appliesTo": [],
+            "rateCode": "4NX7CSSF3DVPXWBT.JRTCKXETXF.V7R92EXG27",
+            "beginRange": "15000000000",
+            "pricePerUnit": {
+              "USD": "0.0000133334"
+            }
+          },
+          {
+            "unit": "Lambda-GB-Second",
+            "endRange": "15000000000",
+            "description": "AWS Lambda - Total Compute - Asia Pacific (Sydney)-Tier-2",
+            "appliesTo": [],
+            "rateCode": "4NX7CSSF3DVPXWBT.JRTCKXETXF.QZE2SB4KVB",
+            "beginRange": "6000000000",
+            "pricePerUnit": {
+              "USD": "0.0000150000"
+            }
+          }
+        ]
+      }
+    ],
+    "s3": [
+      {
+        "sku": "5QVJMK36NJC9G6DC",
+        "attributes": {
+          "volumeType": "Standard",
+          "storageClass": "General Purpose",
+          "regionCode": "ap-southeast-2",
+          "servicecode": "AmazonS3",
+          "durability": "99.999999999%",
+          "usagetype": "APS2-TimedStorage-ByteHrs",
+          "locationType": "AWS Region",
+          "location": "Asia Pacific (Sydney)",
+          "servicename": "Amazon Simple Storage Service",
+          "availability": "99.99%",
+          "operation": ""
+        },
+        "price_dimensions": [
+          {
+            "unit": "GB-Mo",
+            "endRange": "51200",
+            "description": "$0.025 per GB - first 50 TB / month of storage used",
+            "appliesTo": [],
+            "rateCode": "5QVJMK36NJC9G6DC.JRTCKXETXF.PGHJ3S3EYE",
+            "beginRange": "0",
+            "pricePerUnit": {
+              "USD": "0.0250000000"
+            }
+          },
+          {
+            "unit": "GB-Mo",
+            "endRange": "512000",
+            "description": "$0.024 per GB - next 450 TB / month of storage used",
+            "appliesTo": [],
+            "rateCode": "5QVJMK36NJC9G6DC.JRTCKXETXF.D42MF2PVJS",
+            "beginRange": "51200",
+            "pricePerUnit": {
+              "USD": "0.0240000000"
+            }
+          },
+          {
+            "unit": "GB-Mo",
+            "endRange": "Inf",
+            "description": "$0.023 per GB - storage used / month over 500 TB",
+            "appliesTo": [],
+            "rateCode": "5QVJMK36NJC9G6DC.JRTCKXETXF.PXJDJ3YRG3",
+            "beginRange": "512000",
+            "pricePerUnit": {
+              "USD": "0.0230000000"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "api_calls": [
+    {
+      "service": "pricing",
+      "operation": "GetProducts",
+      "status": "success",
+      "n_items": {
+        "PriceList": 3
+      }
+    },
+    {
+      "service": "pricing",
+      "operation": "GetProducts",
+      "status": "success",
+      "n_items": {
+        "PriceList": 1
+      }
+    },
+    {
+      "service": "pricing",
+      "operation": "GetProducts",
+      "status": "success",
+      "n_items": {
+        "PriceList": 1
+      }
+    }
+  ]
+}

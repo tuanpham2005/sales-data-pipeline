@@ -1,0 +1,172 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "queries": [
+      {
+        "file": "16_validation_csv.sql",
+        "query_id": "57e300c1-94c5-4e0c-889f-9656dd45ef08",
+        "status": {
+          "State": "SUCCEEDED",
+          "SubmissionDateTime": "2026-10-22T03:39:17.781000+00:00",
+          "CompletionDateTime": "2026-10-22T03:39:18.282000+00:00"
+        },
+        "statistics": {
+          "EngineExecutionTimeInMillis": 373,
+          "DataScannedInBytes": 284,
+          "TotalExecutionTimeInMillis": 501,
+          "QueryQueueTimeInMillis": 58,
+          "ServicePreProcessingTimeInMillis": 43,
+          "QueryPlanningTimeInMillis": 51,
+          "ServiceProcessingTimeInMillis": 27,
+          "ResultReuseInformation": {
+            "ReusedPreviousResult": false
+          }
+        },
+        "output": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/57e300c1-94c5-4e0c-889f-9656dd45ef08.csv",
+        "columns": [
+          "order_id",
+          "product",
+          "city",
+          "quantity",
+          "total_amount"
+        ],
+        "rows": [
+          {
+            "order_id": "TST001",
+            "product": "Bút, \"đỏ\" – Việt Nam",
+            "city": "TP. Hồ Chí Minh",
+            "quantity": "2",
+            "total_amount": "20.50"
+          },
+          {
+            "order_id": "TST002",
+            "product": "Sổ tay \"A\", khổ nhỏ",
+            "city": "Hà Nội",
+            "quantity": "3",
+            "total_amount": "15.00"
+          }
+        ]
+      },
+      {
+        "file": "04_kpis_after_repeat.sql",
+        "query_id": "6f11a343-1491-4601-92df-59c37da9a93a",
+        "status": {
+          "State": "SUCCEEDED",
+          "SubmissionDateTime": "2026-10-22T03:39:18.811000+00:00",
+          "CompletionDateTime": "2026-10-22T03:39:19.356000+00:00"
+        },
+        "statistics": {
+          "EngineExecutionTimeInMillis": 431,
+          "DataScannedInBytes": 548,
+          "TotalExecutionTimeInMillis": 545,
+          "QueryQueueTimeInMillis": 52,
+          "ServicePreProcessingTimeInMillis": 37,
+          "QueryPlanningTimeInMillis": 82,
+          "ServiceProcessingTimeInMillis": 25,
+          "ResultReuseInformation": {
+            "ReusedPreviousResult": false
+          }
+        },
+        "output": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/6f11a343-1491-4601-92df-59c37da9a93a.csv",
+        "columns": [
+          "valid_line_items",
+          "distinct_orders",
+          "total_quantity",
+          "total_revenue"
+        ],
+        "rows": [
+          {
+            "valid_line_items": "6",
+            "distinct_orders": "5",
+            "total_quantity": "17",
+            "total_revenue": "670000.00"
+          }
+        ]
+      },
+      {
+        "file": "03_quality_after_repeat.sql",
+        "query_id": "3651d095-c04a-4176-a05d-47808c3e234a",
+        "status": {
+          "State": "SUCCEEDED",
+          "SubmissionDateTime": "2026-10-22T03:39:18.830000+00:00",
+          "CompletionDateTime": "2026-10-22T03:39:19.536000+00:00"
+        },
+        "statistics": {
+          "EngineExecutionTimeInMillis": 565,
+          "DataScannedInBytes": 548,
+          "TotalExecutionTimeInMillis": 706,
+          "QueryQueueTimeInMillis": 71,
+          "ServicePreProcessingTimeInMillis": 50,
+          "QueryPlanningTimeInMillis": 139,
+          "ServiceProcessingTimeInMillis": 20,
+          "ResultReuseInformation": {
+            "ReusedPreviousResult": false
+          }
+        },
+        "output": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/3651d095-c04a-4176-a05d-47808c3e234a.csv",
+        "columns": [
+          "line_count",
+          "source_files",
+          "invalid_rows",
+          "duplicate_line_keys"
+        ],
+        "rows": [
+          {
+            "line_count": "6",
+            "source_files": "1",
+            "invalid_rows": "0",
+            "duplicate_line_keys": "0"
+          }
+        ]
+      }
+    ]
+  },
+  "api_calls": [
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryResults",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryResults",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryResults",
+      "status": "success"
+    }
+  ]
+}

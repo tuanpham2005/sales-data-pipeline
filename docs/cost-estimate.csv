@@ -1,0 +1,12 @@
+﻿component,quantity,unit,unit_price_usd,estimate_usd
+S3 Standard storage,0.25,GB-month,0.0250000000,0.006250000000
+S3 PUT/LIST,1000,request,0.0000055000,0.0055000000
+S3 GET,10200,request,4.400E-7,0.0044880000
+Lambda requests,100,request,2.000E-7,0.0000200000
+Lambda 256 MiB x 1s x 100,25.00,GB-second,0.0000166667,0.000416667500
+Athena 100 queries x 100 MiB,0.0095367431640625,TB scanned,5.0000000000,0.04768371582031250000000000
+CloudWatch standard alarms,2,alarm-month,0.1000000000,0.2000000000
+CloudWatch log ingestion,0.01,GB,0.6700000000,0.006700000000
+CloudWatch log storage,0.01,GB-month,0.0330000000,0.000330000000
+Glue catalog metadata,10,object-month,0.0000100000,0.0001000000
+Glue catalog requests,2000,request,0.0000010000,0.0020000000

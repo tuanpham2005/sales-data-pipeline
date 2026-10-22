@@ -1,0 +1,234 @@
+{
+  "status": "success",
+  "stdout": "",
+  "return_value": {
+    "queries": [
+      {
+        "file": "03_quality_gate.sql",
+        "query_id": "4f70bfc6-93ad-4114-b62f-64be20ef0860",
+        "status": {
+          "State": "SUCCEEDED",
+          "SubmissionDateTime": "2026-10-22T03:32:05.234000+00:00",
+          "CompletionDateTime": "2026-10-22T03:32:06.605000+00:00"
+        },
+        "statistics": {
+          "EngineExecutionTimeInMillis": 998,
+          "DataScannedInBytes": 548,
+          "TotalExecutionTimeInMillis": 1371,
+          "QueryQueueTimeInMillis": 89,
+          "ServicePreProcessingTimeInMillis": 227,
+          "QueryPlanningTimeInMillis": 284,
+          "ServiceProcessingTimeInMillis": 57,
+          "ResultReuseInformation": {
+            "ReusedPreviousResult": false
+          }
+        },
+        "output": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/4f70bfc6-93ad-4114-b62f-64be20ef0860.csv",
+        "columns": [
+          "line_count",
+          "source_files",
+          "invalid_rows",
+          "duplicate_line_keys"
+        ],
+        "rows": [
+          {
+            "line_count": "6",
+            "source_files": "1",
+            "invalid_rows": "0",
+            "duplicate_line_keys": "0"
+          }
+        ]
+      },
+      {
+        "file": "13_profile.sql",
+        "query_id": "aed56785-b8b5-42fe-a815-fc610e401193",
+        "status": {
+          "State": "SUCCEEDED",
+          "SubmissionDateTime": "2026-10-22T03:32:06.266000+00:00",
+          "CompletionDateTime": "2026-10-22T03:32:07.281000+00:00"
+        },
+        "statistics": {
+          "EngineExecutionTimeInMillis": 720,
+          "DataScannedInBytes": 548,
+          "TotalExecutionTimeInMillis": 1015,
+          "QueryQueueTimeInMillis": 53,
+          "ServicePreProcessingTimeInMillis": 177,
+          "QueryPlanningTimeInMillis": 72,
+          "ServiceProcessingTimeInMillis": 65,
+          "ResultReuseInformation": {
+            "ReusedPreviousResult": false
+          }
+        },
+        "output": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/aed56785-b8b5-42fe-a815-fc610e401193.csv",
+        "columns": [
+          "order_id",
+          "line_id",
+          "order_date",
+          "product",
+          "category",
+          "quantity",
+          "unit_price",
+          "city",
+          "currency",
+          "total_amount",
+          "source_path"
+        ],
+        "rows": [
+          {
+            "order_id": "ORD001",
+            "line_id": "1",
+            "order_date": "2026-09-01",
+            "product": "Notebook",
+            "category": "Stationery",
+            "quantity": "2",
+            "unit_price": "50000.00",
+            "city": "Ho Chi Minh City",
+            "currency": "VND",
+            "total_amount": "100000.00",
+            "source_path": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv"
+          },
+          {
+            "order_id": "ORD001",
+            "line_id": "2",
+            "order_date": "2026-09-01",
+            "product": "Pen",
+            "category": "Stationery",
+            "quantity": "5",
+            "unit_price": "10000.00",
+            "city": "Ho Chi Minh City",
+            "currency": "VND",
+            "total_amount": "50000.00",
+            "source_path": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv"
+          },
+          {
+            "order_id": "ORD002",
+            "line_id": "1",
+            "order_date": "2026-09-02",
+            "product": "Backpack",
+            "category": "Bags",
+            "quantity": "1",
+            "unit_price": "300000.00",
+            "city": "Ha Noi",
+            "currency": "VND",
+            "total_amount": "300000.00",
+            "source_path": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv"
+          },
+          {
+            "order_id": "ORD003",
+            "line_id": "1",
+            "order_date": "2026-09-02",
+            "product": "Marker",
+            "category": "Stationery",
+            "quantity": "4",
+            "unit_price": "10000.00",
+            "city": "Da Nang",
+            "currency": "VND",
+            "total_amount": "40000.00",
+            "source_path": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv"
+          },
+          {
+            "order_id": "ORD004",
+            "line_id": "1",
+            "order_date": "2026-09-03",
+            "product": "Bottle",
+            "category": "Accessories",
+            "quantity": "2",
+            "unit_price": "60000.00",
+            "city": "Ho Chi Minh City",
+            "currency": "VND",
+            "total_amount": "120000.00",
+            "source_path": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/processed/cleaned/31922ceba57b25dc46a10e4cc086107d98552fae78b73b94975eb90ba16d6195.csv"
+          }
+        ]
+      },
+      {
+        "file": "04_kpis.sql",
+        "query_id": "558b079f-afd4-4fe2-9f60-af8b809a110c",
+        "status": {
+          "State": "SUCCEEDED",
+          "SubmissionDateTime": "2026-10-22T03:32:06.258000+00:00",
+          "CompletionDateTime": "2026-10-22T03:32:06.925000+00:00"
+        },
+        "statistics": {
+          "EngineExecutionTimeInMillis": 554,
+          "DataScannedInBytes": 548,
+          "TotalExecutionTimeInMillis": 667,
+          "QueryQueueTimeInMillis": 53,
+          "ServicePreProcessingTimeInMillis": 34,
+          "QueryPlanningTimeInMillis": 87,
+          "ServiceProcessingTimeInMillis": 26,
+          "ResultReuseInformation": {
+            "ReusedPreviousResult": false
+          }
+        },
+        "output": "s3://tuan-fcj-sales-pipeline-20261006-a7k9/athena-results/558b079f-afd4-4fe2-9f60-af8b809a110c.csv",
+        "columns": [
+          "valid_line_items",
+          "distinct_orders",
+          "total_quantity",
+          "total_revenue"
+        ],
+        "rows": [
+          {
+            "valid_line_items": "6",
+            "distinct_orders": "5",
+            "total_quantity": "17",
+            "total_revenue": "670000.00"
+          }
+        ]
+      }
+    ]
+  },
+  "api_calls": [
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "StartQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryExecution",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryResults",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryResults",
+      "status": "success"
+    },
+    {
+      "service": "athena",
+      "operation": "GetQueryResults",
+      "status": "success"
+    }
+  ]
+}

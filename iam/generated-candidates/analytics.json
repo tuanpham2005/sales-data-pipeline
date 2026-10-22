@@ -1,0 +1,90 @@
+{
+  "Policies": [
+    {
+      "Policy": {
+        "Id": "IamPolicyAutopilot",
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "athena:CreateWorkGroup",
+              "athena:GetQueryExecution",
+              "athena:GetQueryResults",
+              "athena:GetWorkGroup",
+              "athena:StartQueryExecution",
+              "athena:StopQueryExecution",
+              "athena:TagResource"
+            ],
+            "Resource": [
+              "arn:aws:athena:ap-southeast-2:988079434036:capacity-reservation/*",
+              "arn:aws:athena:ap-southeast-2:988079434036:datacatalog/*",
+              "arn:aws:athena:ap-southeast-2:988079434036:workgroup/*"
+            ]
+          },
+          {
+            "Effect": "Allow",
+            "Action": [
+              "athena:ListWorkGroups"
+            ],
+            "Resource": [
+              "*"
+            ]
+          },
+          {
+            "Effect": "Allow",
+            "Action": [
+              "iam:PassRole"
+            ],
+            "Resource": [
+              "*"
+            ],
+            "Condition": {
+              "StringEquals": {
+                "iam:PassedToService": [
+                  "athena.amazonaws.com"
+                ]
+              }
+            }
+          },
+          {
+            "Effect": "Allow",
+            "Action": [
+              "sts:GetCallerIdentity"
+            ],
+            "Resource": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "PolicyType": "Identity"
+    }
+  ],
+  "Warnings": [
+    {
+      "WarningType": "WildcardResource",
+      "Location": {
+        "PolicyIndex": 0,
+        "StatementIndex": 1
+      },
+      "Message": "Statement could not be scoped to specific resources and uses Resource \"*\". Review whether broad resource access is intended."
+    },
+    {
+      "WarningType": "WildcardResource",
+      "Location": {
+        "PolicyIndex": 0,
+        "StatementIndex": 2
+      },
+      "Message": "Statement could not be scoped to specific resources and uses Resource \"*\". Review whether broad resource access is intended."
+    },
+    {
+      "WarningType": "WildcardResource",
+      "Location": {
+        "PolicyIndex": 0,
+        "StatementIndex": 3
+      },
+      "Message": "Statement could not be scoped to specific resources and uses Resource \"*\". Review whether broad resource access is intended."
+    }
+  ]
+}
